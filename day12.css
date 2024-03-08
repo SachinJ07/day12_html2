@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.form {
+  .nav {
+    display: flex;
+    background-color: gray;
+    height: 80px;
+    .logo {
+      flex: 1;
+      color: white;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      p {
+        font-style: normal;
+        margin-left: 5px;
+        font-size: 20px;
+      }
+    }
+    .github {
+      flex: 1;
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+  .form-overall {
+    background-color: #cad2c5;
+    height: 100vh;
+    display: flex;
+    .box1 {
+      display: flex;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      .form-left {
+        background-color: #353535;
+        height: 500px;
+        border-radius: 10px;
+        width: 300px;
+      }
+    }
+    .box2 {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+
+      .box-input {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        > input {
+          background-color: #353535;
+          border: none;
+          border-radius: 5px;
+          width: 400px;
+          height: 30px;
+
+          ::placeholder {
+            color: white;
+          }
+        }
+      }
+      .box-boxes {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        .boxex {
+          background-color: #353535;
+          height: 150px;
+          width: 180px;
+          border-radius: 10px;
+        }
+      }
+      .bottom-box {
+        margin-top: 70px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        .bottom-full {
+          background-color: #353535;
+          height: 130px;
+          border-radius: 10px;
+          width: 800px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form-overall {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-overall {
+    height: auto;
+  }
+  .box-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
